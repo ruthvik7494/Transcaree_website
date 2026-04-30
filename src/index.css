@@ -1,0 +1,37 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fdb92e;
+  --color-primary-dark: #e5a825;
+  --color-secondary: #1a1a1a;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --primary: #fdb92e;
+  --secondary: #1a1a1a;
+}
+
+body {
+  @apply font-sans text-gray-900 bg-white;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-black font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-sm tracking-wider;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
