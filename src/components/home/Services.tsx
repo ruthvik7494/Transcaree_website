@@ -22,13 +22,13 @@ const Services = () => {
       title: "Storage Solutions",
       desc: "We offer safe & secure storage facilities that help you save cargo handling & cost in case of delays in accepting your shipments.",
       img: "/images/service-storage.png",
-      link: "https://tcifreight.in/storage-solutions/"
+      link: "#"
     },
     {
       title: "Containerized Services",
       desc: "Container body vehicles / loads especially for movement of FMCG, White Goods and other high value goods as per customer requirements",
       img: "/images/service-container.png",
-      link: "https://tcifreight.in/containerized-services/"
+      link: "#"
     }
   ];
 

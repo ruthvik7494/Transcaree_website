@@ -4,9 +4,6 @@ const TopBar = () => {
       <div className="container flex justify-between items-center text-xs tracking-wide">
         <div className="flex gap-6">
           <span className="flex items-center gap-2">
-            <span className="text-primary font-bold">TOLL FREE:</span> 1800 1800 824
-          </span>
-          <span className="flex items-center gap-2">
             <span className="text-primary font-bold">EMAIL:</span> support@transcarrier.in
           </span>
         </div>

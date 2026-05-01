@@ -54,7 +54,7 @@ const ReachDistribution = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <img 
-              src="https://tcifreight.in/wp-content/uploads/2025/07/TCI_Hub_Map_for-Website2.png" 
+              src="/images/India-States-Map.png" 
               alt="Trans Carrier Network Map" 
               className="w-full h-auto rounded-lg relative z-10 drop-shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
             />

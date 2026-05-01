@@ -57,7 +57,7 @@ const FeaturesGrid = () => {
             <div className="relative group">
               <img 
                 src="/images/service-storage.png" 
-                alt="Trans Carrier Operations" 
+                alt="Trans Carrier Logistics Operations" 
                 className="w-full h-auto rounded-lg shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>

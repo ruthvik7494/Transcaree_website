@@ -20,7 +20,7 @@ const SustainabilitySection = () => {
         <div className="mb-16 rounded-xl overflow-hidden shadow-2xl bg-black aspect-video max-w-5xl mx-auto">
           <video 
             className="w-full h-full" 
-            src="https://tcil.canto.com/direct/video/0n1hlmh52p1d9118j6m5ptog0t/6ombSZeDyzN9yiCCviEhXo7KTXQ/original?content-type=video%2Fmp4&name=ISO+TEMT+Product+VID-_1.mp4" 
+            src="/images/8357-208052048 (1) (2).mp4" 
             controls 
             preload="metadata"
           ></video>

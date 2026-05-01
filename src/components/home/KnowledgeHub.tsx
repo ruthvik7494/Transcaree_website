@@ -8,11 +8,11 @@ const KnowledgeHub = () => {
     },
     {
       title: "Study Reports",
-      desc: "TCI & IIM Calcutta launched a Joint Study Report on “Operational Efficiency of Freight Transportation by Road in India”.",
+      desc: "Trans Carrier & IIM Calcutta launched a Joint Study Report on “Operational Efficiency of Freight Transportation by Road in India”.",
       link: "#"
     },
     {
-      title: "Ready Reckoner of TCI-IIMC Joint Study Report",
+      title: "Ready Reckoner of Trans Carrier-IIMC Joint Study Report",
       desc: "Operational efficiency of freight transportation by road in India.",
       link: "https://cdn.tcil.in/website/tcil/Study_Report/ready-reckoner-of-tci-iim-joint-study-report-3rd-edition.pdf"
     }
