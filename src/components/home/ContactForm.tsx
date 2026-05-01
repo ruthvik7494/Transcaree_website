@@ -7,23 +7,23 @@ const ContactForm = () => {
         <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
           
           {/* Left Side: Contact Info */}
-          <div className="bg-secondary text-white p-12 md:w-2/5 flex flex-col justify-between">
+          <div className="bg-secondary text-white p-8 md:p-12 md:w-2/5 flex flex-col justify-between">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <p className="text-gray-300 mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">Get in Touch</h2>
+              <p className="text-gray-300 mb-8 md:mb-12">
                 Have a question or need a custom quote? Fill out the form and our team will get back to you within 24 hours.
               </p>
 
               <div className="space-y-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Email Us</p>
-                    <p className="font-bold">support@transcarrier.in</p>
+                    <p className="font-bold break-all sm:break-normal text-sm sm:text-base">support@transcarrier.in</p>
                   </div>
                 </div>
 
@@ -38,7 +38,7 @@ const ContactForm = () => {
           </div>
 
           {/* Right Side: Form */}
-          <div className="p-12 md:w-3/5">
+          <div className="p-8 md:p-12 md:w-3/5">
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
