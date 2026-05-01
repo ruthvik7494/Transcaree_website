@@ -44,7 +44,7 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className="relative h-[calc(100vh-120px)] min-h-[600px] w-full overflow-hidden">
+    <div className="relative h-[calc(100vh-80px)] md:h-[calc(100vh-120px)] min-h-[500px] md:min-h-[600px] w-full overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -62,24 +62,25 @@ const Hero = () => {
             }}
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent md:from-black/60 md:via-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent md:hidden" />
 
           {/* Content */}
           <div className="container relative h-full flex flex-col justify-center text-white z-10">
             <div className={`max-w-3xl transform transition-all duration-700 delay-300 ${
               index === currentSlide ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
             }`}>
-              <h1 className="text-5xl md:text-7xl font-black mb-2 tracking-tight">
+              <h1 className="text-4xl md:text-7xl font-black mb-4 md:mb-2 tracking-tight leading-tight">
                 {slide.title} <br />
                 <span className="text-primary">{slide.subtitle}</span>
               </h1>
-              <p className="text-xl md:text-2xl font-medium mb-10 text-gray-200">
+              <p className="text-lg md:text-2xl font-medium mb-8 md:mb-10 text-gray-200">
                 {slide.desc}
               </p>
               <div className="flex gap-4">
                 <a 
                   href="/contact-us"
-                  className="bg-primary hover:bg-secondary hover:text-white text-secondary font-black px-10 py-4 rounded-lg uppercase tracking-widest transition-all duration-300 shadow-xl"
+                  className="bg-primary hover:bg-secondary hover:text-white text-secondary font-black px-8 py-3 md:px-10 md:py-4 rounded-lg uppercase tracking-widest transition-all duration-300 shadow-xl text-sm md:text-base"
                 >
                   Contact Us
                 </a>
@@ -92,33 +93,33 @@ const Hero = () => {
       {/* Navigation Controls */}
       <div className="absolute bottom-10 left-0 right-0 z-20">
         <div className="container flex items-center justify-between">
-          <div className="flex gap-3">
+          <div className="flex gap-2 md:gap-3">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-1.5 transition-all duration-300 rounded-full ${
-                  index === currentSlide ? 'w-12 bg-primary' : 'w-6 bg-white/30 hover:bg-white/60'
+                className={`h-1 md:h-1.5 transition-all duration-300 rounded-full ${
+                  index === currentSlide ? 'w-8 md:w-12 bg-primary' : 'w-4 md:w-6 bg-white/30 hover:bg-white/60'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
           
-          <div className="flex gap-4">
+          <div className="flex gap-2 md:gap-4">
             <button 
               onClick={() => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)}
-              className="p-3 rounded-full border border-white/20 hover:bg-primary hover:border-primary transition-all group"
+              className="p-2 md:p-3 rounded-full border border-white/20 hover:bg-primary hover:border-primary transition-all group"
             >
-              <svg className="w-6 h-6 rotate-180 group-hover:text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 md:w-6 md:h-6 rotate-180 group-hover:text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
               </svg>
             </button>
             <button 
               onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
-              className="p-3 rounded-full border border-white/20 hover:bg-primary hover:border-primary transition-all group"
+              className="p-2 md:p-3 rounded-full border border-white/20 hover:bg-primary hover:border-primary transition-all group"
             >
-              <svg className="w-6 h-6 group-hover:text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 md:w-6 md:h-6 group-hover:text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
               </svg>
             </button>

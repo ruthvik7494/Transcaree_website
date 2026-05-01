@@ -1,4 +1,17 @@
+import { useRef } from 'react';
+
 const Services = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = clientWidth * 0.8;
+      const scrollTo = direction === 'left' ? scrollLeft - scrollAmount : scrollLeft + scrollAmount;
+      scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+    }
+  };
+
   const services = [
     {
       title: "Less Than Truck Load",
@@ -33,44 +46,71 @@ const Services = () => {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white overflow-hidden">
       <div className="container">
-        <div className="mb-16">
-          <h2 className="text-4xl font-bold text-secondary">Products & Services</h2>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <h2 className="text-4xl font-bold text-secondary mb-4">Products & Services</h2>
+            <p className="text-gray-500 max-w-xl">Comprehensive logistics solutions tailored to your business needs, delivered with precision and care.</p>
+          </div>
+          
+          {/* Slider Controls */}
+          <div className="flex gap-4">
+            <button 
+              onClick={() => scroll('left')}
+              className="p-4 rounded-full border border-gray-200 text-secondary hover:bg-primary hover:border-primary transition-all group"
+              aria-label="Previous service"
+            >
+              <svg className="w-6 h-6 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button 
+              onClick={() => scroll('right')}
+              className="p-4 rounded-full border border-gray-200 text-secondary hover:bg-primary hover:border-primary transition-all group"
+              aria-label="Next service"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 mb-20">
+        {/* Services Slider Row */}
+        <div 
+          ref={scrollRef}
+          className="flex overflow-x-auto snap-x snap-mandatory pb-12 gap-8 no-scrollbar scroll-smooth"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           {services.map((service, index) => (
-            <div key={index} className="group cursor-pointer flex flex-col items-start text-left">
-              <a href={service.link} className="w-full mb-6 overflow-hidden rounded-lg">
-                <img 
-                  src={service.img} 
-                  alt={service.title} 
-                  className="w-full h-auto transform transition-transform duration-500 group-hover:scale-105"
-                />
+            <div 
+              key={index} 
+              className="flex-none w-[85%] md:w-[45%] lg:w-[23%] snap-start group cursor-pointer flex flex-col items-start text-left"
+            >
+              <a href={service.link} className="w-full mb-6 overflow-hidden rounded-xl shadow-sm border border-gray-100 block">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={service.img} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
               </a>
-              <h2 className="text-xl font-bold text-secondary mb-3 hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors">
                 <a href={service.link}>{service.title}</a>
-              </h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                 {service.desc}
               </p>
             </div>
           ))}
         </div>
-
-        <div className="flex justify-center">
-          <a 
-            href="#" 
-            className="bg-primary hover:bg-black hover:text-white text-secondary font-bold py-3 px-10 rounded transition-all duration-300 uppercase text-sm tracking-widest shadow-md"
-          >
-            Know More
-          </a>
-        </div>
       </div>
     </section>
   );
 };
+
 
 export default Services;
 

@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/about-us' },
     { name: 'Products & Services', path: '/products-services' },
     { name: 'Industry Solutions', path: '/industry-solutions' },
-    { name: 'Sustainability', path: '/sustainability' },
+
     { name: 'Careers', path: 'https://tcil.com/careers/', isExternal: true },
     { name: 'Contact Us', path: '/contact-us' },
   ];

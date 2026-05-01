@@ -41,12 +41,7 @@ const ReachDistribution = () => {
               <p className="text-gray-700">
                 Trans Carrier, in collaboration with our regional partners, provides end-to-end logistics solutions for international locations across Bangladesh, Nepal & Bhutan.
               </p>
-              <a 
-                href="#" 
-                className="inline-block bg-primary hover:bg-secondary hover:text-white text-secondary font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-xs tracking-widest shadow-md"
-              >
-                Know More
-              </a>
+
             </div>
           </div>
 

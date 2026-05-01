@@ -1,5 +1,5 @@
 const FeaturesGrid = () => {
-  const leftFeatures = [
+  const allFeatures = [
     {
       icon: "https://tcifreight.in/wp-content/uploads/2023/11/pioneer-of-cargo-transportation-brown.svg",
       title: "Pioneer of cargo transportation since 2018"
@@ -11,10 +11,7 @@ const FeaturesGrid = () => {
     {
       icon: "https://tcifreight.in/wp-content/uploads/2023/11/assured-quality-brown.svg",
       title: "Assured Quality & Reliability"
-    }
-  ];
-
-  const rightFeatures = [
+    },
     {
       icon: "https://tcifreight.in/wp-content/uploads/2023/11/pan-india-presence-brown.svg",
       title: "Pan-India Presence"
@@ -36,45 +33,38 @@ const FeaturesGrid = () => {
   return (
     <section className="section-padding bg-[#f8f9fa]">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-          
-          {/* Left Column */}
-          <div className="space-y-12">
-            {leftFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col items-center lg:items-end text-center lg:text-right group cursor-pointer">
-                <div className="w-16 h-16 mb-4 transform transition-transform duration-300 group-hover:scale-110">
-                  <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" />
-                </div>
-                <h3 className="text-lg font-bold text-secondary leading-tight max-w-[200px]">
-                  {feature.title}
-                </h3>
-              </div>
-            ))}
-          </div>
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold text-secondary">Why Trans Carrier?</h2>
+        </div>
 
-          {/* Middle Column (Large Image) */}
-          <div className="flex justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* Left Column: Image */}
+          <div className="lg:col-span-5">
             <div className="relative group">
+              <div className="absolute -inset-4 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <img 
                 src="/images/service-storage.png" 
                 alt="Trans Carrier Logistics Operations" 
-                className="w-full h-auto rounded-lg shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
+                className="w-full h-auto rounded-xl shadow-2xl relative z-10 transform transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="space-y-12">
-            {rightFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col items-center lg:items-start text-center lg:text-left group cursor-pointer">
-                <div className="w-16 h-16 mb-4 transform transition-transform duration-300 group-hover:scale-110">
-                  <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" />
+          {/* Right Column: Features Grid */}
+          <div className="lg:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
+              {allFeatures.map((feature, index) => (
+                <div key={index} className="flex flex-col items-start group cursor-pointer">
+                  <div className="w-16 h-16 mb-4 transform transition-transform duration-300 group-hover:scale-110">
+                    <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" />
+                  </div>
+                  <h3 className="text-lg font-bold text-secondary leading-tight">
+                    {feature.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-secondary leading-tight max-w-[200px]">
-                  {feature.title}
-                </h3>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
         </div>
