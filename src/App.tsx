@@ -9,7 +9,7 @@ import IndustriesServed from './components/home/IndustriesServed';
 import Services from './components/home/Services';
 import SustainabilitySection from './components/home/SustainabilitySection';
 import ReachDistribution from './components/home/ReachDistribution';
-import EndToEndSolutions from './components/home/EndToEndSolutions';
+import ContactForm from './components/home/ContactForm';
 import SafetySection from './components/home/SafetySection';
 import KnowledgeHub from './components/home/KnowledgeHub';
 
@@ -29,9 +29,10 @@ function App() {
         <Stats />
         <SustainabilitySection />
         <ReachDistribution />
-        <EndToEndSolutions />
+
         <SafetySection />
         <KnowledgeHub />
+        <ContactForm />
       </main>
 
       <Footer />

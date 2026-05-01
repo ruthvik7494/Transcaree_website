@@ -2,51 +2,33 @@ const Services = () => {
   const services = [
     {
       title: "Less Than Truck Load",
-      desc: "TCI freight is your partner in moving small (up to 1 ton)/LTL (above 1 ton) quantity freight shipments across the country.",
-      img: "https://tcifreight.in/wp-content/uploads/2024/01/road-freight-1.jpg",
-      link: "https://tcifreight.in/less-than-truck-load/"
+      desc: "Trans Carrier is your partner in moving small (up to 1 ton)/LTL (above 1 ton) quantity freight shipments across the country.",
+      img: "/images/service-ltl.png",
+      link: "#"
     },
     {
       title: "Full Truck Load",
-      desc: "TCI Freight is fully equipped to handle Bulk/FTL movement from anywhere in India and its neighboring countries.",
-      img: "https://tcifreight.in/wp-content/uploads/2025/06/Full-Truck-Load-1.jpg",
-      link: "https://tcifreight.in/full-truck-load/"
+      desc: "Trans Carrier is fully equipped to handle Bulk/FTL movement from anywhere in India and its neighboring countries.",
+      img: "/images/service-ftl.png",
+      link: "#"
     },
     {
       title: "Project & Heavy Haul",
-      desc: "TCI specializes in carrying project and heavy haul consignments through challenging terrains and across long distances.",
-      img: "https://tcifreight.in/wp-content/uploads/2024/01/Project-Heavy-Haul.jpg",
-      link: "https://tcifreight.in/project-and-heavy-haul/"
+      desc: "Trans Carrier specializes in carrying project and heavy haul consignments through challenging terrains and across long distances.",
+      img: "/images/service-project.png",
+      link: "#"
     },
     {
       title: "Storage Solutions",
       desc: "We offer safe & secure storage facilities that help you save cargo handling & cost in case of delays in accepting your shipments.",
-      img: "https://tcifreight.in/wp-content/uploads/2025/06/Storage-facility-1.jpg",
+      img: "/images/service-storage.png",
       link: "https://tcifreight.in/storage-solutions/"
-    },
-    {
-      title: "Cross Border Logistics Solutions",
-      desc: "End to End Logistics for international locations across Bangladesh, Nepal & Bhutan.",
-      img: "https://tcifreight.in/wp-content/uploads/2025/06/Cross-Border.jpg",
-      link: "https://tcifreight.in/cross-border-logistics-solutions/"
-    },
-    {
-      title: "CHA Facility",
-      desc: "As a certified Authorized Economic Operator (AEO), TCI is a trusted expert in delivering end-to-end customs brokerage, clearance, and regulatory compliance solutions.",
-      img: "https://tcifreight.in/wp-content/uploads/2025/06/CHA.jpg",
-      link: "https://tcifreight.in/cha-facility/"
     },
     {
       title: "Containerized Services",
       desc: "Container body vehicles / loads especially for movement of FMCG, White Goods and other high value goods as per customer requirements",
-      img: "https://tcifreight.in/wp-content/uploads/2025/06/Containerized-Services-1.jpg",
+      img: "/images/service-container.png",
       link: "https://tcifreight.in/containerized-services/"
-    },
-    {
-      title: "Value Added Services",
-      desc: "Convenient & enhanced offerings to turn your complex deliveries into hassle free turn key solutions.",
-      img: "https://tcifreight.in/wp-content/uploads/2025/07/value-added-service.jpg",
-      link: "https://tcifreight.in/value-added-services"
     }
   ];
 
@@ -79,7 +61,7 @@ const Services = () => {
 
         <div className="flex justify-center">
           <a 
-            href="https://tcifreight.in/products-services/" 
+            href="#" 
             className="bg-primary hover:bg-black hover:text-white text-secondary font-bold py-3 px-10 rounded transition-all duration-300 uppercase text-sm tracking-widest shadow-md"
           >
             Know More

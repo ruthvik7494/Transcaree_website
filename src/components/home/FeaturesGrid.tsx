@@ -11,10 +11,6 @@ const FeaturesGrid = () => {
     {
       icon: "https://tcifreight.in/wp-content/uploads/2023/11/assured-quality-brown.svg",
       title: "Assured Quality & Reliability"
-    },
-    {
-      icon: "https://tcifreight.in/wp-content/uploads/2025/06/cross-border.png",
-      title: "Cross Border Solutions"
     }
   ];
 
@@ -60,8 +56,8 @@ const FeaturesGrid = () => {
           <div className="flex justify-center">
             <div className="relative group">
               <img 
-                src="https://tcifreight.in/wp-content/uploads/2026/04/2.jpg" 
-                alt="Logistics Operations" 
+                src="/images/service-storage.png" 
+                alt="Trans Carrier Operations" 
                 className="w-full h-auto rounded-lg shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>

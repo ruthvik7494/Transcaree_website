@@ -32,7 +32,7 @@ const Navbar = () => {
         <a href="/" className="shrink-0">
           <img 
             src={logo} 
-            alt="TCI Freight Logo" 
+            alt="Trans Carrier Logo" 
             className="h-8 md:h-10 w-auto transition-all duration-300"
           />
         </a>

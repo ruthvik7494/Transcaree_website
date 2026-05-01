@@ -23,11 +23,11 @@ const KnowledgeHub = () => {
       <div className="container">
         {/* Header */}
         <div className="max-w-4xl mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-6">TCI Freight - Knowledge Hub</h2>
+          <h2 className="text-4xl font-bold text-secondary mb-6">Trans Carrier - Knowledge Hub</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            TCI Freight, one of the oldest surface transport entities in India, is at the forefront of 
-            driving cutting edge solutions. On the way, we continue to pioneer some groundbreaking 
-            researches and innovations, that have changed the Transport & Logistics over past 6 decades.
+            Trans Carrier is at the forefront of driving cutting edge logistics solutions. 
+            On the way, we continue to pioneer groundbreaking researches and innovations 
+            that have shaped the Transport & Logistics industry.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 const SafetySection = () => {
   const initiatives = [
     {
-      title: "TCI Safe Safar",
+      title: "Trans Carrier Safe Safar",
       desc: "Our flagship safety program, designed to educate and empower drivers with best practices in road safety, vehicle maintenance, and emergency response. Through regular training sessions, health check-ups, and awareness drives, we ensure our drivers are always road-ready and safety-conscious.",
       link: "https://tcisafesafar.com",
       hasButton: true
@@ -41,7 +41,7 @@ const SafetySection = () => {
           <h2 className="text-4xl font-bold text-secondary mb-6">Safety: Our 1st Priority</h2>
           <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
             <p>
-              At TCI Freight, safety is not just a protocol – it’s a promise. We are deeply committed to 
+              At Trans Carrier, safety is not just a protocol – it’s a promise. We are deeply committed to 
               ensuring the highest standards of health, safety and security across all our road transport 
               and logistics operations. Our goal is clear: <span className="font-bold text-secondary">Zero Accidents. Zero Compromise.</span>
             </p>

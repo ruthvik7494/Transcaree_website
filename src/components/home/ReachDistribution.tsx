@@ -17,7 +17,7 @@ const ReachDistribution = () => {
             <div>
               <h2 className="text-4xl font-bold text-secondary mb-6">Our Reach & Distribution</h2>
               <p className="text-gray-700 leading-relaxed">
-                TCI Freight operates through a robust and modular logistics infrastructure, featuring 25 strategically located hubs across India’s major commercial centers. These hubs, each averaging 25,000 sq. ft., anchor a vast network of 700+ branch offices, enabling seamless cargo movement and consolidation across urban and rural markets. Our multi-tiered distribution model – comprising hubs, transshipment centers and storage facilities – ensures:
+                Trans Carrier operates through a robust and modular logistics infrastructure, featuring 25 strategically located hubs across India’s major commercial centers. These hubs, each averaging 25,000 sq. ft., anchor a vast network of 700+ branch offices, enabling seamless cargo movement and consolidation across urban and rural markets. Our multi-tiered distribution model – comprising hubs, transshipment centers and storage facilities – ensures:
               </p>
             </div>
 
@@ -33,16 +33,16 @@ const ReachDistribution = () => {
             </ul>
 
             <p className="text-gray-700 italic border-l-4 border-primary pl-4">
-              Whether you’re moving bulk industrial goods or time – sensitive consignments, TCI Freight’s expansive and intelligent logistics ecosystem ensures speed, reliability and cost-efficiency – empowering businesses to scale without limits.
+              Whether you’re moving bulk industrial goods or time – sensitive consignments, Trans Carrier’s expansive and intelligent logistics ecosystem ensures speed, reliability and cost-efficiency – empowering businesses to scale without limits.
             </p>
 
             <div className="pt-4 space-y-4">
               <h3 className="text-2xl font-bold text-secondary">International locations served</h3>
               <p className="text-gray-700">
-                TCI Freight in collaboration with TCI Bangladesh & TCI Nepal, also provides end-to-end logistics solutions for international locations across Bangladesh, Nepal & Bhutan.
+                Trans Carrier, in collaboration with our regional partners, provides end-to-end logistics solutions for international locations across Bangladesh, Nepal & Bhutan.
               </p>
               <a 
-                href="https://tcifreight.in/cross-border-logistics-solutions/" 
+                href="#" 
                 className="inline-block bg-primary hover:bg-secondary hover:text-white text-secondary font-bold py-3 px-8 rounded transition-all duration-300 uppercase text-xs tracking-widest shadow-md"
               >
                 Know More
@@ -55,7 +55,7 @@ const ReachDistribution = () => {
             <div className="absolute -inset-4 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <img 
               src="https://tcifreight.in/wp-content/uploads/2025/07/TCI_Hub_Map_for-Website2.png" 
-              alt="TCI Hub Map India" 
+              alt="Trans Carrier Network Map" 
               className="w-full h-auto rounded-lg relative z-10 drop-shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
             />
           </div>

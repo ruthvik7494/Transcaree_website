@@ -8,31 +8,31 @@ const Hero = () => {
       title: "Driven by Safety",
       subtitle: "Delivered with Care",
       desc: "Your Trusted Road Partner",
-      image: "https://tcifreight.in/wp-content/uploads/slider/cache/44f457e095de15f4fc782c88396d1205/slide-010.jpg"
+      image: "/images/hero-safety.png"
     },
     {
       title: "Reliability That’s Stood",
       subtitle: "the Test of Time",
-      desc: "Delivering Trust Since 1958",
-      image: "https://tcifreight.in/wp-content/uploads/slider/cache/d2abd2d1acaa8e1839b29df7e858c32e/Image4_1920-px×1080px.jpg"
+      desc: "Delivering Trust Across the Region",
+      image: "/images/hero-reliability.png"
     },
     {
       title: "Green Miles,",
       subtitle: "Smart Moves",
-      desc: "TCI Freight – Sustainability at the Heart of Every Journey",
-      image: "https://tcifreight.in/wp-content/uploads/slider/cache/dbdb1a959cd8c72beeb6d75a56c9a7ee/freight-about-us.jpg"
+      desc: "Trans Carrier – Sustainability at the Heart of Every Journey",
+      image: "/images/hero-green.png"
     },
     {
       title: "Empowering Industries,",
       subtitle: "Enabling Growth",
       desc: "Fuelling Businesses with Reliable Freight Services",
-      image: "https://tcifreight.in/wp-content/uploads/slider/cache/29cf1145375f4f8d3fcc8a53778144ad/slide011.jpg"
+      image: "/images/hero-industries.png"
     },
     {
       title: "Nationwide Network,",
       subtitle: "Seamless Reach",
-      desc: "TCI Freight Delivering from Anywhere to Everywhere",
-      image: "https://tcifreight.in/wp-content/uploads/slider/cache/ecf9f6b7d1af71ccab301c0028303477/slide-03-n.jpg"
+      desc: "Trans Carrier Delivering from Anywhere to Everywhere",
+      image: "/images/hero-network.png"
     }
   ];
 

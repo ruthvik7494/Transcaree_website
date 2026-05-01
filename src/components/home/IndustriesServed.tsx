@@ -8,7 +8,6 @@ const IndustriesServed = () => {
     { name: "Dairy Products", img: "https://tcifreight.in/wp-content/uploads/2025/06/dairy-and-milks.jpg" },
     { name: "Seeds", img: "https://tcifreight.in/wp-content/uploads/2025/06/seeds.jpg" },
     { name: "Pipe MFG", img: "https://tcifreight.in/wp-content/uploads/2025/06/Pipe-MFG.jpg" },
-    { name: "Metro & Rail", img: "https://tcifreight.in/wp-content/uploads/2025/06/metro-and-rail.jpg" },
     { name: "Defense", img: "https://tcifreight.in/wp-content/uploads/2025/06/defance.jpg" },
     { name: "Renewable Energy", img: "https://tcifreight.in/wp-content/uploads/2025/06/Renewable-Energy.jpg" },
     { name: "Other Industries", img: "https://tcifreight.in/wp-content/uploads/2025/07/all-others-industries.jpg" }

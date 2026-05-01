@@ -7,7 +7,7 @@ const TopBar = () => {
             <span className="text-primary font-bold">TOLL FREE:</span> 1800 1800 824
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-primary font-bold">EMAIL:</span> care@tcifreight.in
+            <span className="text-primary font-bold">EMAIL:</span> support@transcarrier.in
           </span>
         </div>
         <div className="flex gap-4">
@@ -15,7 +15,7 @@ const TopBar = () => {
           <span className="text-gray-600">|</span>
           <a href="#" className="hover:text-primary transition-colors">CUSTOMER LOGIN</a>
           <span className="text-gray-600">|</span>
-          <a href="#" className="hover:text-primary transition-colors">MY TCI</a>
+          <a href="#" className="hover:text-primary transition-colors">MY TRANS CARRIER</a>
         </div>
       </div>
     </div>

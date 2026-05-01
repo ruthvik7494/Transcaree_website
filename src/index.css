@@ -2,14 +2,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #fdb92e;
-  --color-primary-dark: #e5a825;
+  --color-primary: #51A7E8;
+  --color-primary-dark: #3B8CCB;
   --color-secondary: #1a1a1a;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 :root {
-  --primary: #fdb92e;
+  --primary: #51A7E8;
   --secondary: #1a1a1a;
 }
 

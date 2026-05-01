@@ -4,13 +4,13 @@ const SustainabilitySection = () => {
       <div className="container">
         {/* Heading */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-secondary">Sustainability at TCI Freight</h2>
+          <h2 className="text-4xl font-bold text-secondary">Sustainability at Trans Carrier</h2>
         </div>
 
         {/* Intro Text */}
         <div className="max-w-4xl mb-12">
           <p className="text-lg text-gray-700 leading-relaxed">
-            At TCI Freight, sustainability is not an afterthought, but ingrained in all our solutions. 
+            At Trans Carrier, sustainability is not an afterthought, but ingrained in all our solutions. 
             To all our customers, we offer the power to track, measure and reduce the carbon emissions 
             from their logistics operations.
           </p>
@@ -29,15 +29,15 @@ const SustainabilitySection = () => {
         {/* Bottom Content */}
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-700 leading-relaxed mb-10">
-            The TCI-IIMB Supply Chain Sustainability Lab at IIM Bangalore, has developed India’s 1st 
+            Trans Carrier is committed to environmental excellence. We leverage advanced tools like the 
             ISO certified Transport Emission Measurement Tool (TEMT) which enables all businesses to 
-            track the exact emissions from their Transport Chain Elements (TCE). TEMT’s APIs are also 
-            integrated with the ULIP portal for enabling transparent emission reporting & easier 
-            regulatory compliances. Come, join the movement and opt for more environment-friendly choices.
+            track the exact emissions from their Transport Chain Elements (TCE). These systems are 
+            integrated for transparent emission reporting and easier regulatory compliance. 
+            Come, join the movement and opt for more environment-friendly choices with Trans Carrier.
           </p>
 
           <a 
-            href="https://ems.freightemissions.com/" 
+            href="#" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-primary hover:bg-secondary hover:text-white text-secondary font-bold py-4 px-10 rounded transition-all duration-300 uppercase text-sm tracking-widest shadow-lg"
