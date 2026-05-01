@@ -2,7 +2,7 @@ const FeaturesGrid = () => {
   const leftFeatures = [
     {
       icon: "https://tcifreight.in/wp-content/uploads/2023/11/pioneer-of-cargo-transportation-brown.svg",
-      title: "Pioneer of cargo transportation since 1958"
+      title: "Pioneer of cargo transportation since 2018"
     },
     {
       icon: "https://tcifreight.in/wp-content/uploads/2025/06/24X7-Support.png",
